@@ -1,0 +1,12 @@
+html, body {
+  cursor: url(whitechalk.png) 102 128, default;
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.button:hover {
+  cursor: url(hand.png) 85 50, default;
+}
