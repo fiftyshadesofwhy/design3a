@@ -23,8 +23,8 @@ let pucb;
 let dw;
 let rc;
 let rcb;
-let cam;
-let camb;
+// let cam;
+// let camb;
 let chalkfill;
 let path;
 let nodraw;
@@ -45,9 +45,9 @@ function preload() {
   bcc = loadImage('bluechalk.png');
   puc = loadImage('puc.png');
   pucc = loadImage('purplechalk.png');
-  cam = loadImage ('camera.png');
+  // cam = loadImage ('camera.png');
   chalkfill = '#EFEFEF';
-  const buttons = [wcb, picb, ocb, ycb, gcb, bcb, pucb, camb, rcb];   rc = loadImage('raincloud.png');
+  const buttons = [wcb, picb, ocb, ycb, gcb, bcb, pucb, rcb];   rc = loadImage('raincloud.png');
 }
 
 function setup() {
@@ -110,13 +110,13 @@ function setup() {
     pucb.position(240,windowHeight-160);
     pucb.style('background-color','#00000000');
     pucb.style('border-color','#00000000');
-  image(cam, windowWidth-175, windowHeight-200, 200, 200);
-    camb = createButton('');
-    camb.class('button');
-    camb.size(150,200);
-    camb.position(windowWidth-150, windowHeight-200);
-    camb.style('background-color','#00000000');
-    camb.style('border-color','#00000000');
+  // image(cam, windowWidth-175, windowHeight-200, 200, 200);
+  //   camb = createButton('');
+  //   camb.class('button');
+  //   camb.size(150,200);
+  //   camb.position(windowWidth-150, windowHeight-200);
+  //   camb.style('background-color','#00000000');
+  //   camb.style('border-color','#00000000');
   wcb.mousePressed(makeWhite);
   picb.mousePressed(makePink);
   ocb.mousePressed(makeOrange);
@@ -124,7 +124,7 @@ function setup() {
   gcb.mousePressed(makeGreen);
   bcb.mousePressed(makeBlue);
   pucb.mousePressed(makePurple);
-  camb.mousePressed(takePicture);
+  // camb.mousePressed(takePicture);
   rcb.mousePressed(rainTime);
 }
 
@@ -182,8 +182,8 @@ function rainTime() {
   chalkfill = '#00000000'
 }
 
-function takePicture() {
-  saveCanvas('ordinaryextraordinarymemories','png');
-  document.body.style.cursor = 'url(hand.png) 85 50, default';
-  chalkfill = '#00000000'
-}
+// function takePicture() {
+//   saveCanvas('ordinaryextraordinarymemories','png');
+//   document.body.style.cursor = 'url(hand.png) 85 50, default';
+//   chalkfill = '#00000000'
+// }
