@@ -305,7 +305,7 @@ body {
     
     .explain {
         top:6vw;
-        font-size: 1.75vh;
+        font-size: 1vw;
     }
 
     .gya.explain {
@@ -327,8 +327,7 @@ body {
     }
 
     .linkbox {
-        right:0.1%;
-        top:0.1%
+        right:0.25%;
+        top:0.25%
     }
-
   }
